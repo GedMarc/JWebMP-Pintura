@@ -1,0 +1,69 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+      <parent>
+        <groupId>com.guicedee</groupId>
+        <artifactId>dev-kit</artifactId>
+        <version>0.0.0_0-SNAPSHOT</version>
+        <relativePath>../../../../../../</relativePath>
+    </parent>
+
+	<groupId>com.jwebmp.plugins.javascript</groupId>
+    <artifactId>jwebmp-pintura</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Pintura Image Editing</name>
+    <description>The JWebMP Implementation for pintura</description>
+    <url>https://github.com/GedMarc/JWebMP-Pintura</url>
+
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/GedMarc/JWebMP-Pintura/issues</url>
+    </issueManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jwebmp.plugins.angular</groupId>
+            <artifactId>angularts-client</artifactId>
+        </dependency>
+    </dependencies>
+
+    <scm>
+        <url>https://github.com/GedMarc/JWebMP-Pintura.git/</url>
+    </scm>
+
+    <ciManagement>
+        <system>TeamCity</system>
+        <url>http://jwebmp.com/teamcity</url>
+    </ciManagement>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.guicedee</groupId>
+                <artifactId>standalone-bom</artifactId>
+                <type>pom</type>
+                <scope>import</scope>
+                <version>${guicedee.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.guicedee</groupId>
+                <artifactId>fasterxml-bom</artifactId>
+                <type>pom</type>
+                <scope>import</scope>
+                <version>${guicedee.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.jwebmp</groupId>
+                <artifactId>jwebmp-bom</artifactId>
+                <type>pom</type>
+                <scope>import</scope>
+                <version>${guicedee.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

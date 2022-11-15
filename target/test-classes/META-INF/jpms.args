@@ -1,0 +1,4 @@
+--patch-module
+com.jwebmp.plugins.pintura=_
+--add-reads
+com.jwebmp.plugins.pintura=ALL-UNNAMED
